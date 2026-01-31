@@ -62,7 +62,7 @@ local function apply_quarry_settings(pos, settings)
 end
 
 minetest.register_tool("quarry_controller:quarry_config_tool", {
-    description = "TA4 Quarry Configuration Tool",
+    description = "TA4 Quarry Configuration Tool (Need 150 expoints to use this tool)",
     inventory_image = "quarry_config_tool.png",
 
     -------------------------------------------------
