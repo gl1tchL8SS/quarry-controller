@@ -1,3 +1,11 @@
+
+Adds an automatic quarry configuration tool to techage. 
+
+Right click + shift to copy settings, left click to select quarries, right click to configure and left click + shift to start quarries.
+
+-----------------------------------------------------------------------------------------------------------------
+
+
 Copyright (C) 2026 gl1tchL8SS
 
 This program is free software: you can redistribute it and/or modify
@@ -13,8 +21,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.
 If not, see <https://www.gnu.org/licenses/>.
-
-
-Adds an automatic quarry configuration tool to techage. 
-
-Right click + shift to copy settings, left click to select quarries, right click to configure and left click + shift to start quarries.
