@@ -3,9 +3,9 @@
 -- Sneak + right click | copy settings
 -- Left click          | select / deselect quarry
 -- Right click         | apply to selected quarries
--- Requires 120 techage exp to use
+-- Requires 150 techage exp to use
 
-local REQUIRED_EXP = 120
+local REQUIRED_EXP = 150
 
 local function pos_to_key(pos)
     return minetest.pos_to_string(pos)
@@ -78,7 +78,7 @@ minetest.register_tool("quarry_controller:quarry_config_tool", {
 
         if exp < REQUIRED_EXP then
             minetest.chat_send_player(name,
-                "✖ You need at least " .. REQUIRED_EXP .. " exp to use this tool."
+                "You need at least " .. REQUIRED_EXP .. " exp to use this tool."
             )
             return itemstack
         end
@@ -146,7 +146,7 @@ minetest.register_tool("quarry_controller:quarry_config_tool", {
 
         if exp < REQUIRED_EXP then
             minetest.chat_send_player(name,
-                "✖ You need at least " .. REQUIRED_EXP .. " exp to use this tool."
+                "You need at least " .. REQUIRED_EXP .. " exp to use this tool."
             )
             return itemstack
         end
