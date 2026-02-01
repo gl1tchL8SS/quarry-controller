@@ -236,6 +236,11 @@ minetest.register_craft({
     }
 })
 
+minetest.register_craft({
+    output = "quarry_controller:super_diamond 9",
+    recipe = {"quarry_controller:super_diamond_block"}
+})
+
 minetest.register_node("quarry_controller:super_diamond_block", {
     description = ("Super Diamond Block"),
     tiles = {"quarry_diamond_block.png"},
