@@ -238,7 +238,9 @@ minetest.register_craft({
 
 minetest.register_craft({
     output = "qc:super_diamond 9",
-    recipe = {"qc:super_diamond_block"}
+    recipe = {
+        {"qc:super_diamond_block"}
+    }
 })
 
 minetest.register_node("qc:super_diamond_block", {
