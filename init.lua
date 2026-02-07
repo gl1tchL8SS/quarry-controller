@@ -61,7 +61,7 @@ local function apply_quarry_settings(pos, settings)
     end
 end
 
-minetest.register_tool("quarry_controller:quarry_config_tool", {
+minetest.register_tool("qc:quarry_config_tool", {
     description = "TA4 Quarry Configuration Tool (Need 150 expoints to use this tool)",
     inventory_image = "quarry_config_tool.png",
 
@@ -222,13 +222,13 @@ minetest.register_tool("quarry_controller:quarry_config_tool", {
 
 
 
-minetest.register_craftitem("quarry_controller:super_diamond", {
+minetest.register_craftitem("qc:super_diamond", {
     description = "Super Diamond",
     inventory_image = "quarry_diamond.png"
 })
 
 minetest.register_craft({
-    output = "quarry_controller:super_diamond",
+    output = "qc:super_diamond",
     recipe = {
         {"default:diamondblock", "default:diamondblock", "default:diamondblock"},
         {"default:diamondblock", "default:diamondblock", "default:diamondblock"},
@@ -237,32 +237,32 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-    output = "quarry_controller:super_diamond 9",
-    recipe = {"quarry_controller:super_diamond_block"}
+    output = "qc:super_diamond 9",
+    recipe = {"qc:super_diamond_block"}
 })
 
-minetest.register_node("quarry_controller:super_diamond_block", {
+minetest.register_node("qc:super_diamond_block", {
     description = ("Super Diamond Block"),
     tiles = {"quarry_diamond_block.png"},
     groups = {cracky = 1}
 })
 
 minetest.register_craft({
-    output = "quarry_controller:super_diamond_block",
+    output = "qc:super_diamond_block",
     recipe = {
-        {"quarry_controller:super_diamond", "quarry_controller:super_diamond", "quarry_controller:super_diamond"},
-        {"quarry_controller:super_diamond", "quarry_controller:super_diamond", "quarry_controller:super_diamond"},
-        {"quarry_controller:super_diamond", "quarry_controller:super_diamond", "quarry_controller:super_diamond"}
+        {"qc:super_diamond", "qc:super_diamond", "qc:super_diamond"},
+        {"qc:super_diamond", "qc:super_diamond", "qc:super_diamond"},
+        {"qc:super_diamond", "qc:super_diamond", "qc:super_diamond"}
     }
 })
 
-minetest.register_craftitem("quarry_controller:quarry_stick", {
+minetest.register_craftitem("qc:quarry_stick", {
     description = "Quarry Stick",
     inventory_image = "quarry_stick.png"
 })
 
 minetest.register_craft({
-    output = "quarry_controller:quarry_stick",
+    output = "qc:quarry_stick",
     recipe = {
         {"techage:ta4_quarry_pas","techage:ta4_quarry_pas","techage:ta4_quarry_pas"},
         {"techage:ta4_quarry_pas","techage:ta4_quarry_pas","techage:ta4_quarry_pas"},
@@ -271,11 +271,11 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-    output = "quarry_controller:quarry_config_tool",
+    output = "qc:quarry_config_tool",
     recipe = {
-        {"quarry_controller:super_diamond_block", "quarry_controller:super_diamond_block", "quarry_controller:super_diamond_block"},
-        {"", "quarry_controller:quarry_stick", ""},
-        {"", "quarry_controller:quarry_stick", ""},
+        {"qc:super_diamond_block", "qc:super_diamond_block", "qc:super_diamond_block"},
+        {"", "qc:quarry_stick", ""},
+        {"", "qc:quarry_stick", ""},
     }
 })
 
