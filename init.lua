@@ -237,6 +237,13 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+    output = "default:diamondblock 9",
+    recipe = {
+        {"qc:super_diamond"}
+    }
+})
+
+minetest.register_craft({
     output = "qc:super_diamond 9",
     recipe = {
         {"qc:super_diamond_block"}
